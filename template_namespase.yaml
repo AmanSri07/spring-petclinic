@@ -1,21 +1,11 @@
-app:
-  name: buildpiper-demo
-  version: "1.0"
-
-database:
-  host: localhost
-  port: 5432
-  username: testuser
-  password: testpass
-
-environment:
-  name: dev
-  region: india
-
-features:
-  login: true
-  notifications: false
-
-service:
-  replicas: 2
-  image: nginx:latest
+APP_NAME: buildpiper-demo
+APP_VERSION: "1.0"
+DB_HOST: localhost
+DB_PORT: "5432"
+DB_USERNAME: testuser
+DB_PASSWORD: testpass
+ENVIRONMENT: dev
+REGION: india
+ENABLE_LOGIN: "true"
+ENABLE_NOTIFICATIONS: "false"
+REPLICA_COUNT: "2"

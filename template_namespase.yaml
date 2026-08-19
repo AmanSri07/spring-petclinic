@@ -1,1 +1,21 @@
-apiVersion: v1
+app:
+  name: buildpiper-demo
+  version: "1.0"
+
+database:
+  host: localhost
+  port: 5432
+  username: testuser
+  password: testpass
+
+environment:
+  name: dev
+  region: india
+
+features:
+  login: true
+  notifications: false
+
+service:
+  replicas: 2
+  image: nginx:latest
